@@ -93,10 +93,10 @@ aside {
 	height: 23.3%;
 	position: absolute;
 	opacity: 0;	
-	-webkit-transition: opacity 1s ease-in;
-	-moz-transition: opacity 1s ease-in;
-	-o-transition: opacity 1s ease-in;
-	transition: opacity 1s ease-in;
+	-webkit-transition: opacity 2s ease-in;
+	-moz-transition: opacity 2s ease-in;
+	-o-transition: opacity 2s ease-in;
+	transition: opacity 2s ease-in;
 }
 
 aside:hover {
