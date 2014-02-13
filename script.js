@@ -72,19 +72,31 @@ function MouseWheelHandler(e) {
 
 	document.getElementsByTagName('header')[0].innerHTML = scrolled;
 
-	//show aside elements to show at a fixed scroll number
-	if (scrolled > 230){		
+	//make aside elements and text to show at a fixed scroll number with transition
+	if (scrolled > 10){		
 		document.getElementById('aside1').style.opacity = '1';
-		if (scrolled > 460){
-			document.getElementById('aside2').style.opacity = '1';
-		}
-		if (scrolled > 690){
-			document.getElementById('aside3').style.opacity = '1';
-		}
-		if (scrolled > 920){
-			document.getElementById('aside4').style.opacity = '1';
+		if (scrolled > 15){
+			document.getElementById('text1').style.opacity = '1';
 		}
 	} 
+	if (scrolled > 240){
+		document.getElementById('aside2').style.opacity = '1';
+		if (scrolled > 245){
+			document.getElementById('text2').style.opacity = '1';
+		}
+	}
+	if (scrolled > 360){
+		document.getElementById('aside3').style.opacity = '1';
+		if (scrolled > 365){
+			document.getElementById('text3').style.opacity = '1';
+		}
+	}
+	if (scrolled > 660){
+		document.getElementById('aside4').style.opacity = '1';
+		if (scrolled > 665){
+			document.getElementById('text4').style.opacity = '1';
+		}
+	}
 	updateWaypoints();
 }
 
