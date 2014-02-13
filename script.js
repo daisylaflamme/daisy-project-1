@@ -15,6 +15,7 @@ for (i = 0; i < waypoints.length; i++) {
 	// https://developer.mozilla.org/en-US/docs/Web/Reference/Events/click
 	waypoints[i].addEventListener("click", waypointClickHandler, false);
 }
+
 //address the triangle and attach click event listener to it:
 var nextTriangle = document.getElementById('next-triangle');
 nextTriangle.addEventListener("click", nextTriangleClickHandler, false);
@@ -70,6 +71,10 @@ function MouseWheelHandler(e) {
 	scrolled = Math.min(Math.max(0, scrolled - rawScrolled), scrollTotal);
 
 	document.getElementsByTagName('header')[0].innerHTML = scrolled;
-	
+	if (scrolled > 250){
+		var asides = document.getElementsByTagName('aside');
+		asides.setAttribute('style','opacity: 1;');
+	} 
 	updateWaypoints();
 }
+
