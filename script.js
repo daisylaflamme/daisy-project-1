@@ -15,7 +15,7 @@ for (i = 0; i < waypoints.length; i++) {
 	// https://developer.mozilla.org/en-US/docs/Web/Reference/Events/click
 	waypoints[i].addEventListener("click", waypointClickHandler, false);
 }
-
+//address the triangle and attach click event listener to it:
 var nextTriangle = document.getElementById('next-triangle');
 nextTriangle.addEventListener("click", nextTriangleClickHandler, false);
 
@@ -53,15 +53,13 @@ function waypointClickHandler(e) {
 	}
 }
 
+// creating the function that triggers switching to the next waypoint
 function nextTriangleClickHandler(e) {
 	console.log('cilck');
-	for (i = 0; i < waypoints.length; i++) {
-		
+	for (i = 0; i < waypoints.length; i++) {		
 			scrolled = scrolled + 100;
-			updateWaypoints();
-	
-	}
-	
+			updateWaypoints();	
+	}	
 }
 
 
