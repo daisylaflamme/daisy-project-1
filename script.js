@@ -16,6 +16,9 @@ for (i = 0; i < waypoints.length; i++) {
 	waypoints[i].addEventListener("click", waypointClickHandler, false);
 }
 
+var nextTriangle = document.getElementById('next-triangle');
+nextTriangle.addEventListener("click", nextTriangleClickHandler, false);
+
 function updateWaypoints() {
 	fractionScrolled = scrolled / scrollTotal;
 
@@ -48,6 +51,13 @@ function waypointClickHandler(e) {
 			console.log(scrolled);
 		}
 	}
+}
+
+function nextTriangleClickHandler(e) {
+	console.log('cilck');
+	fractionScrolled = scrolled / scrollTotal +100;
+
+	updateWaypoints();
 }
 
 
