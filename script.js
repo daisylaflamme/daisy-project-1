@@ -55,9 +55,13 @@ function waypointClickHandler(e) {
 
 function nextTriangleClickHandler(e) {
 	console.log('cilck');
-	fractionScrolled = scrolled / scrollTotal +100;
-
-	updateWaypoints();
+	for (i = 0; i < waypoints.length; i++) {
+		
+			scrolled = scrolled + 100;
+			updateWaypoints();
+	
+	}
+	
 }
 
 
