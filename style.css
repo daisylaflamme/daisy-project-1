@@ -112,7 +112,7 @@ aside:hover {
  }
  aside h3 {
  	text-align:center;
- 	
+
  }
 
 .right {
@@ -164,6 +164,7 @@ nav ol li {
 nav ol li:hover {
 	background-color: pink;
 }
+
 
 .active-waypoint {
 	background-color: #D12121;
