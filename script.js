@@ -95,6 +95,7 @@ function MouseWheelHandler(e) {
 		document.getElementById('aside4').style.opacity = '1';
 		if (scrolled > 665){
 			document.getElementById('text4').style.opacity = '1';
+			$("#detail").slideDown();
 		}
 	}
 	updateWaypoints();
