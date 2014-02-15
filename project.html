@@ -46,12 +46,12 @@
 					<li id='waypoint-1'><div class='waypoint'></div><p>i am daisy</p></li>
 					<li id='waypoint-2'><div class='waypoint'></div><p>why i am hire</p></li>
 					<li id='waypoint-3'><div class='waypoint'></div><p>what i do</p></li>
-					<li id='waypoint-4'><div class='waypoint'><div></div><p>my background</p></li>
-					<li id='waypoint-5'><div class='waypoint'><div></div><p>it</p></li>
-					<li id='waypoint-6'><div class='waypoint'><div></div><p>information architecture</p></li>
-					<li id='waypoint-7'><div class='waypoint'><div></div><p>web design</p></li>
-					<li id='waypoint-8'><div class='waypoint'><div></div><p>learn javascript</p></li>
-					<li id='waypoint-9'><div class='waypoint'><div></div><p>goodbye</p></li>
+					<li id='waypoint-4'><div class='waypoint'></div><p>my background</p></li>
+					<li id='waypoint-5'><div class='waypoint'></div><p>information technology</p></li>
+					<li id='waypoint-6'><div class='waypoint'></div><p>information architecture</p></li>
+					<li id='waypoint-7'><div class='waypoint'></div><p>web design</p></li>
+					<li id='waypoint-8'><div class='waypoint'></div><p>learn javascript</p></li>
+					<li id='waypoint-9'><div class='waypoint'></div><p>goodbye</p></li>
 				</ol>
 			</nav>
 
@@ -72,7 +72,13 @@
 
 <script>
 	$(document).ready(function(){
-		$("#detail").hide();	  
+		$("#detail").hide();	 
+		$("nav ol li p").hide(); 
+		$("nav ol li").hover(function(){
+		  $("nav ol li p").show();
+		  },function(){
+		  $("nav ol li p").hide();
+		});
   });
 </script>
 

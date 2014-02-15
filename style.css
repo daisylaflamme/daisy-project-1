@@ -165,7 +165,6 @@ nav ol li:hover {
 	background-color: pink;
 }
 
-
 .active-waypoint {
 	background-color: #D12121;
 }
@@ -181,4 +180,20 @@ li div {
 
 	margin-right: auto;
 	margin-left: auto;	
+}
+
+li p {
+	color:pink;
+	position: relative;
+	font-size:70%;	
+	right: 80px;
+	text-align:left;
+
+	-webkit-transition: opacity 1s ease-in;
+	-moz-transition: opacity 1s ease-in;
+	-o-transition: opacity 1s ease-in;
+	transition: opacity 1s ease-in;
+}
+li p:hover {
+	opacity: 1;
 }
