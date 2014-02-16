@@ -194,6 +194,10 @@ li p {
 	-o-transition: opacity 1s ease-in;
 	transition: opacity 1s ease-in;
 }
+li p span{
+	position: fixed;
+	right:40px;
+}
 li p:hover {
 	opacity: 1;
 }
