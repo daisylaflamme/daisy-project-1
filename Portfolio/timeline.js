@@ -15,9 +15,9 @@ var scrolling = false;
 window.onmousemove = function(event) {
 	mouseX = event.clientX;
 	mouseY = event.clientY;
-	if (!scrollTimeline) {
-		scrollTimeline = window.setInterval(scroll, updateInterval);
-	}
+	//if (!scrollTimeline) {
+		//scrollTimeline = window.setInterval(scroll, updateInterval);
+	//}
 };
 
 // Global access to all the project li's
@@ -32,7 +32,7 @@ var timeline = document.querySelector("#timeline");
 timeline.onmouseout = unslide; // Undo slides when out of timeline
 
 
-function scroll(event) {
+function scroll() {
 var animationFrame = webkitRequestAnimationFrame(scroll);
 	var buffer = window.innerWidth/4;
 
