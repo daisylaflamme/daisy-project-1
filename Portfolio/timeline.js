@@ -15,9 +15,9 @@ var scrolling = false;
 window.onmousemove = function(event) {
 	mouseX = event.clientX;
 	mouseY = event.clientY;
-	//if (!scrollTimeline) {
-		//scrollTimeline = window.setInterval(scroll, updateInterval);
-	//}
+	if (!scrollTimeline) {
+		scrollTimeline = window.setInterval(scroll, updateInterval);
+	}
 };
 
 // Global access to all the project li's
